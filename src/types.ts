@@ -3,3 +3,7 @@ export interface IFetchedItem {
   label: string;
   value: number;
 }
+
+export type ItemsState = {
+  items: IFetchedItem[];
+};

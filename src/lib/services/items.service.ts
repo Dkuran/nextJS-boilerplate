@@ -7,6 +7,6 @@ export const getItems = async () => {
     method: POST,
     headers: getCommonHeaders(),
   });
-  const responseBody: Result<IFetchedItem> = await response.json();
+  const responseBody: Result<IFetchedItem[]> = await response.json();
   return responseBody;
 };
